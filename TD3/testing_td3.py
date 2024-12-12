@@ -13,14 +13,14 @@ if __name__ == '__main__':
                     env=env, batch_size=100, layer1_size=400, layer2_size=300,
                     n_actions=env.action_space.shape[0])
   
-  untrained_agent = Agent(alpha=0.001, beta=0.001, 
-                    input_dims=env.observation_space.shape, tau=0.005,
-                    env=env, batch_size=100, layer1_size=400, layer2_size=300,
-                    n_actions=env.action_space.shape[0])
+  # untrained_agent = Agent(alpha=0.001, beta=0.001, 
+  #                   input_dims=env.observation_space.shape, tau=0.005,
+  #                   env=env, batch_size=100, layer1_size=400, layer2_size=300,
+  #                   n_actions=env.action_space.shape[0])
   
   # Load the agent
   agent.load_models()
   
   # Save the model as a gif
-  # save_model_gif(env, agent, 'TD3')
-  save_model_gif(env, untrained_agent, 'TD3_untrained')
+  save_model_gif(env, agent, 'TD3')
+  # save_model_gif(env, untrained_agent, 'TD3_untrained')

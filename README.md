@@ -18,6 +18,11 @@ MultiDDPG
   -- networks.py (basis code for critics)
   -- utils.py (graphing and video code)
 ```
+### Setup 
+
+```bash
+python install .
+```
 
 ### To train
 

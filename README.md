@@ -19,5 +19,18 @@ MultiDDPG
   -- utils.py (graphing and video code)
 ```
 
+### To train
+
+```bash
+cd TD3
+python training_td3.py
+```
+
+### To generate video
+```bash
+cd TD3
+python testing_td3.py
+```
+
 For full code explaination see:
 https://medium.com/@alexparistimms/extending-ddpg-to-td3-and-beyond-4f5e87d9c79d
